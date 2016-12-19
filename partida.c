@@ -1,8 +1,6 @@
 #include <stdio.h>
 #include "partida.h"
 
-
-
 void inicializar_partida(t_partida *p_pa)
 {
     int u_j, n_j, i, j, n_jugadores, doble_j, doble_f;
@@ -18,8 +16,8 @@ void inicializar_partida(t_partida *p_pa)
     inicializar_pila(&p_pa->pi);
 
      n_jugadores=p_pa->js.n_jugadores;
-     for(i=0;i<n_jugadores;i++){
-         for(j=0;j<NUM_INICIAL_FICHAS_JUGADOR;j++){
+     for(int i = 0; i < n_jugadores; i++){
+         for(int j = 0; j < NUM_INICIAL_FICHAS_JUGADOR; j++){
              p_pa->js.j[i].f[j]=coger_ficha_de_la_pila(&p_pa->pi);
          }
      }
@@ -27,8 +25,8 @@ void inicializar_partida(t_partida *p_pa)
      p_pa->js.turno=doble_j;
 }
 void imprimir_estado_partida(t_partida pa){
-    
+
 }
 void realizar_jugada(t_partida *p_pa){
-    
+
 }
