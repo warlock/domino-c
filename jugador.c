@@ -47,7 +47,9 @@ void que_jugador_tiene_doble_mas_alto(t_jugadores js, int *p_nj, int *p_nf){
         }
         //DOBLE MAS ALTO
     }
-
+    printf("\nEl  jugador q tiene el dobles es ", p_njAux);
+    printf("\nEl dobles es ", p_nfAux);
+    
 
 }
 void pasar_turno(t_jugadores *p_js){

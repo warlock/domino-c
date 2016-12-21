@@ -7,19 +7,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/virtual/Escriptori/Domino/tirada.c</file>
+            <file>file:/home/virtual/Escriptori/Domino/jugador.c</file>
+            <file>file:/home/virtual/Escriptori/Domino/pila.c</file>
             <file>file:/home/virtual/Escriptori/Domino/mesa.h</file>
-            <file>file:/home/virtual/Escriptori/Domino/partida.c</file>
+            <file>file:/home/virtual/Escriptori/Domino/ficha.c</file>
             <file>file:/home/virtual/Escriptori/Domino/Domino.c</file>
             <file>file:/home/virtual/Escriptori/Domino/partida.h</file>
-            <file>file:/home/virtual/Escriptori/Domino/ficha.h</file>
-            <file>file:/home/virtual/Escriptori/Domino/ficha.c</file>
-            <file>file:/home/virtual/Escriptori/Domino/jugador.h</file>
-            <file>file:/home/virtual/Escriptori/Domino/tirada.h</file>
             <file>file:/home/virtual/Escriptori/Domino/mesa.c</file>
-            <file>file:/home/virtual/Escriptori/Domino/jugador.c</file>
+            <file>file:/home/virtual/Escriptori/Domino/ficha.h</file>
+            <file>file:/home/virtual/Escriptori/Domino/partida.c</file>
             <file>file:/home/virtual/Escriptori/Domino/pila.h</file>
-            <file>file:/home/virtual/Escriptori/Domino/pila.c</file>
         </group>
     </open-files>
 </project-private>

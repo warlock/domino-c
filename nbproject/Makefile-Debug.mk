@@ -21,7 +21,6 @@ FC=gfortran
 AS=as
 
 # Macros
-#CND_PLATFORM=Darwin
 CND_PLATFORM=GNU-Linux-x86
 CND_DLIB_EXT=so
 CND_CONF=Debug
@@ -69,37 +68,37 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/domino: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/domino ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/Domino.o: Domino.c
+${OBJECTDIR}/Domino.o: Domino.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Domino.o Domino.c
 
-${OBJECTDIR}/ficha.o: ficha.c
+${OBJECTDIR}/ficha.o: ficha.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ficha.o ficha.c
 
-${OBJECTDIR}/jugador.o: jugador.c
+${OBJECTDIR}/jugador.o: jugador.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/jugador.o jugador.c
 
-${OBJECTDIR}/mesa.o: mesa.c
+${OBJECTDIR}/mesa.o: mesa.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/mesa.o mesa.c
 
-${OBJECTDIR}/partida.o: partida.c
+${OBJECTDIR}/partida.o: partida.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/partida.o partida.c
 
-${OBJECTDIR}/pila.o: pila.c
+${OBJECTDIR}/pila.o: pila.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/pila.o pila.c
 
-${OBJECTDIR}/tirada.o: tirada.c
+${OBJECTDIR}/tirada.o: tirada.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/tirada.o tirada.c

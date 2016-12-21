@@ -12,6 +12,8 @@ int main (){
     t_jugador g;
 
     t_partida partida;
+    
+    t_jugadores *p_nj,*p_nf,js;
 
     inicializar_partida(&partida);
 
@@ -23,6 +25,8 @@ int main (){
     for(int j = 0; j < t.n_fichas; j++) {
       printf("%d - %d\n", t.f[j].a, t.f[j].b);
     }
+    
+    que_jugador_tiene_doble_mas_alto(&js,&*p_nj->j,&*p_nf->j);
 
     //randomize(&t, t.n_fichas);
     /*printf("---------------\n" );
