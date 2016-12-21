@@ -20,7 +20,9 @@ void imprimir_jugadores(t_jugadores js, int visible){
 
 
 }
-void que_jugador_tiene_doble_mas_alto(t_jugadores js, int *p_nj, int *p_nf){
+/*
+
+void que_jugador_tiene_doble_mas_alto(t_jugadores js, int p_nj, int p_nf) {
     int i, j, dobles=0, masAlto, dobleAnt, dobleAct, p_njAux,p_nfAux;
     for(i=0;i<js.n_jugadores;i++){
         for(j=0; j<js.j[i].n_fichas;j++){
@@ -44,14 +46,15 @@ void que_jugador_tiene_doble_mas_alto(t_jugadores js, int *p_nj, int *p_nf){
                     p_njAux=*p_nj;
                     p_nfAux=*p_nf;
             }
+
         }
         //DOBLE MAS ALTO
     }
     printf("\nEl  jugador q tiene el dobles es ", p_njAux);
     printf("\nEl dobles es ", p_nfAux);
-    
-
 }
+*/
+
 void pasar_turno(t_jugadores *p_js){
 
     int pos;

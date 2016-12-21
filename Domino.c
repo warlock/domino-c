@@ -12,8 +12,6 @@ int main (){
     t_jugador g;
 
     t_partida partida;
-    
-    t_jugadores *p_nj,*p_nf,js;
 
     inicializar_partida(&partida);
 
@@ -25,8 +23,12 @@ int main (){
     for(int j = 0; j < t.n_fichas; j++) {
       printf("%d - %d\n", t.f[j].a, t.f[j].b);
     }
-    
-    que_jugador_tiene_doble_mas_alto(&js,&*p_nj->j,&*p_nf->j);
+
+    printf("\nNUMERO DE FICHAS JUGADOR: %d\n", partida.js.j[0].n_fichas);
+
+    printf("\nNUMERO DE FICHA: %d\n", partida.js.j[0].f[0].a);
+
+    //que_jugador_tiene_doble_mas_alto(partida.js,*partida.js[0],*partida.js[1]);
 
     //randomize(&t, t.n_fichas);
     /*printf("---------------\n" );

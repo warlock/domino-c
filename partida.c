@@ -7,7 +7,7 @@ void inicializar_partida(t_partida *p_pa)
     char t_j;
     printf("¿Numero de jugadores?: [2-4]");
     scanf("%d",&u_j);
-    p_pa->js.n_jugadores=n_j;
+    p_pa->js.n_jugadores = u_j;
     printf("¿Un jugador humano?: [s/n]");
     scanf("%c",&t_j);
     if(t_j=='s')p_pa->js.un_humano=T_HUMANO;
@@ -15,14 +15,17 @@ void inicializar_partida(t_partida *p_pa)
 
     inicializar_pila(&p_pa->pi);
 
-     n_jugadores=p_pa->js.n_jugadores;
-     for(int i = 0; i < n_jugadores; i++){
-         for(int j = 0; j < NUM_INICIAL_FICHAS_JUGADOR; j++){
-             p_pa->js.j[i].f[j]=coger_ficha_de_la_pila(&p_pa->pi);
-         }
-     }
-     que_jugador_tiene_doble_mas_alto(p_pa->js, &doble_j, &doble_f);
-     p_pa->js.turno=doble_j;
+    for (int i = 0; i < p_pa->js.n_jugadores; i++) {
+      t_jugador p;
+      p.n_fichas = 7;
+      for(int j = 0; j < p.n_fichas; j++) {
+          p.f[j] = coger_ficha_de_la_pila(&p_pa->pi);
+      }
+      p.tipo = 1;
+      p_pa->js.j[i] = p;
+    }
+
+    //JUGADOR DOBLE MAS ALTO?
 }
 void imprimir_estado_partida(t_partida pa){
 

@@ -34,4 +34,3 @@ void pasar_turno(t_jugadores *p_js);
 void imprimir_turno(t_jugadores _js);
 
 #endif // JUGADOR_H
-
